@@ -14,8 +14,8 @@
     </head>
     <body>
         
-        <header class="header">
-            <h1 class="header__title"> <span class="outstanding-text">Website</span></h1>
+        <header class="header" id="inicio">
+            <h1 class="header__title"> Portfólio<span class="outstanding-text"> Website</span></h1>
             <i data-feather="menu" id="button-menu" class="header__button-menu"></i>
             
             <div class="header__menu" id="menu">
@@ -23,11 +23,15 @@
                 <a href="">Projetos</a>
                 <a href="">Frontend Mentor</a>
                 <a href="">Sobre</a>
-                <a class="contact-button" href="">Contato</a>
-                
-
-                
+                <a class="contact-button" href="#contato">Contato</a>
             </div>
+            <ul class="header__menu-desktop">
+                <li class="menu-item"><a href="#inicio">Início</a></li>
+                <li class="menu-item"><a href="#projetos">Projetos</a></li>
+                <li class="menu-item"><a href="#mentor">Frontend Mentor</a></li>
+                <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                <li class="menu-item"><a href="#contato">Contato</a></li>
+            </ul>
         </header>
         <div class="hero container-padding">
             <img class="hero__image" src="./public/images/vecteezy_programmer-people-concept-use-laptop-and-programming-code_.jpg" alt="" srcset="">
@@ -41,7 +45,7 @@
             
         </div>
         <div class="session-footer-divisor"></div>
-        <div class="projects-session container-padding">
+        <div class="projects-session container-padding" id="projetos">
             <div class="session-description-area">
                 <h2 class="session-title">Projetos de <span class="outstanding-text">Software</span></h2>
                 <p class="session-description">Abaixo você encontrará alguns projetos de software nos quais eu estive envolvido, ou até mesmo projetos que estão em andamento e estou participando</p>
@@ -57,17 +61,17 @@
             <div class="software-project reserve">
                 <img src="./public/images/grillo_erp.png" alt="" class="software-project__image">
                 <div class="software-project__info">
-                    <h3 class="software-project__title">Holo health systems</h3>
-                    <p class="software-project__details">Esta é uma aplicação desenvolvida com incentivo da disciplina de engenharia de software. A sua funcionalidade primária é auxiliar pacientes para marcação de consultas médicas.</p>
+                    <h3 class="software-project__title">Restauração ERP Grillo</h3>
+                    <p class="software-project__details">Este projeto foi feito com o propósito de corrigir problemas de responsividade dentro do sistema de cadastro da empresa Grillo LTDA.</p>
                     <span class="visit-button">Visitar</span>
                 </div>
             </div>
             <div class="session-footer-divisor"></div>
         </div>
-        <div class="frontend-mentor-session container-padding">
+        <div class="frontend-mentor-session container-padding" id="mentor">
             <div class="session-description-area">
                 <h2 class="session-title"><span class="outstanding-text">Frontend</span> Mentor</h2>
-                <p class="session-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="session-description">Aqui você encontrará alguns dos projetos que fiz baseados nos designs disponíveis na página do frontend mentor, com a finalidade de praticar CSS</p>
             </div>
             <div class="frontend-mentor-projects">
                 <div class="frontend-project">
@@ -94,10 +98,10 @@
             </div>
             <div class="session-footer-divisor"></div>
         </div>
-        <div class="technology-session container-padding">
+        <div class="technology-session container-padding" id="tecnologias">
             <div class="session-description-area">
                 <h2 class="session-title"><span class="outstanding-text">Tecnologias</span> Utilizadas</h2>
-                <p class="session-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="session-description">Fazer bons projetos de software é importante, mais ainda são ferramentas convenientes que são utilizadas durante o processo de desenvolvimento de aplicações.</p>
             </div>
             <div class="technology-list">
                 <div class="technology">
@@ -115,7 +119,7 @@
             </div>
             <div class="session-footer-divisor"></div>
         </div>
-        <div class="about-me-session container-padding">
+        <div class="about-me-session container-padding" id="sobre">
             <div class="session-description-area">
                 <h2 class="session-title">Sobre <span class="outstanding-text">mim</span></h2>
             </div>
@@ -127,7 +131,7 @@
             </div>
             <div class="session-footer-divisor"></div>
         </div>
-        <div class="contact-session">
+        <div class="contact-session" id="contato">
             <div class="contact-information">
                 <h3 class="name">Carlos <span class="outstanding-text">Frey</span></h3>
                 <ul class="footer-navigation-menu horizontal-list">
