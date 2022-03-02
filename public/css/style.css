@@ -126,6 +126,11 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 .5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
 }
 
 .header__title {
@@ -252,6 +257,9 @@
 
 }
 
+.hero {
+    margin-top: 3rem;
+}
 
 @media (min-width: 1024px) {
     .hero {
