@@ -103,6 +103,10 @@
     margin: 0 auto;
 }
 
+body {
+    background-color: var(--white);
+}
+
 .reserve {
     flex-direction: row-reverse;
 }

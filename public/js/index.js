@@ -12,6 +12,8 @@ ButtonMenu.addEventListener('click', (e) => {
 
 
 
-function ScrollToNode(e) {
-    console.log(e.target)
-}
+document.querySelectorAll('.item').forEach( element => {
+    element.addEventListener('click', () => {
+        Menu.style.width = '0px'
+    })
+})
