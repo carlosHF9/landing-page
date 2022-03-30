@@ -135,6 +135,7 @@ body {
     left: 0;
     right: 0;
     background-color: var(--white);
+    z-index: 3;
 }
 
 .header__title {
@@ -261,9 +262,71 @@ body {
 
 }
 
+
+
+
+.slide-right {
+    animation-name: slide-in-right;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes fade-in {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+}
+
+
+@keyframes slide-in-right {
+
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes appear {
+    
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+        z-index: -1;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 .hero {
     margin-top: 3rem;
+    background-color: transparent;
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
 }
+
+
 
 @media (min-width: 1024px) {
     .hero {
@@ -280,6 +343,16 @@ body {
     display: block;
     width: 75%;
     margin: 0 auto;
+    z-index: -1;
+}
+
+@media (min-width: 1024px) {
+    .hero__image {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
 }
 
 
@@ -380,9 +453,28 @@ body {
     
 }
 
+@keyframes slide-left {
+    
+
+    from {
+        transform: translateX(-80%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .software-project {
     padding-bottom: 5rem;
+    animation-name: slide-left;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
+
+
 
 @media (min-width: 1024px) {
 
@@ -470,11 +562,30 @@ body {
 }
 
 
+.frontend-project {
+    transition: transform .5s ease;
+    transform: scale(1);
+    z-index: 0;
+}
+
+.frontend-project:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+
+.first-project {
+
+}
+
 .frontend-project__title {
     font-size: var(--big);
     font-weight: lighter;
     margin: .5rem 0 1rem 0;
+    
 }
+
+
 
 @media (min-width: 1024px) {
     .frontend-project__title {
