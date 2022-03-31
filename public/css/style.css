@@ -95,6 +95,8 @@
     display: block;
     padding-bottom: .5rem;
     border-bottom: 3px solid var(--very-light-purple);
+    text-decoration: none;
+    color: var(--black);
 }
 
 .container-padding {
