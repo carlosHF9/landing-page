@@ -1,148 +1,283 @@
 <!DOCTYPE html>
 <html lang="en" id="inicio">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portifólio</title>
-        <link rel="stylesheet" href="./public/css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300;400;700&display=swap" rel="stylesheet"> 
-        <script src="https://unpkg.com/feather-icons"></script>
-        
-    </head>
-    <body >
-        
-        <header class="header" >
-            <h1 class="header__title"> Portfólio<span class="outstanding-text"> Website</span></h1>
-            <i data-feather="menu" id="button-menu" class="header__button-menu"></i>
-            
-            <div class="header__menu" id="menu">
-                <a class="item" href="#inicio">Início</a>
-                <a class="item" href="#projetos">Projetos</a>
-                <a class="item" href="#mentor">Frontend Mentor</a>
-                <a class="item" href="#sobre">Sobre</a>
-                <a class="item" class="contact-button" href="#contato">Contato</a>
-            </div>
-            <ul class="header__menu-desktop">
-                <li class="menu-item"><a class="item" href="#inicio">Início</a></li>
-                <li class="menu-item"><a class="item" href="#projetos">Projetos</a></li>
-                <li class="menu-item"><a class="item" href="#mentor">Frontend Mentor</a></li>
-                <li class="menu-item"><a class="item" href="#sobre">Sobre</a></li>
-                <li class="menu-item"><a class="item" href="#contato">Contato</a></li>
-            </ul>
-        </header>
-        <div class="hero container-padding">
-            <img class="hero__image" src="./public/images/vecteezy_programmer-people-concept-use-laptop-and-programming-code_.jpg" alt="" srcset="">
-            <div class="hero__info-container">
-                <h2 class="hero__impact-phrase">Meu nome é <span class="outstanding-text">Carlos</span> e este é o meu <span class="outstanding-text">Portifólio</span></h2>
-                <div class="hero__options">
-                    <button class="hero__lets-go-button">Lets gooo!</button>
-                    <a href="" class="hero__leave-button">Go back to web</a>
-                </div>
-            </div>
-            
-        </div>
-        <div class="session-footer-divisor"></div>
-        <div class="projects-session container-padding" id="projetos">
-            <div class="session-description-area"> 
-                <h2 class="session-title">Projetos de <span class="outstanding-text">Software</span></h2>
-                <p class="session-description">Abaixo você encontrará alguns projetos de software nos quais eu estive envolvido, ou até mesmo projetos que estão em andamento e estou participando</p>
-            </div>
-            <div class="software-project  software-project-left-animated">
-                <img src="./public/images/holo (online-video-cutter.com).gif" alt="" class="software-project__image">
-                <div class="software-project__info">
-                    <h3 class="software-project__title">Holo health systems</h3>
-                    <p class="software-project__details">Esta é uma aplicação desenvolvida com incentivo da disciplina de engenharia de software. A sua funcionalidade primária é auxiliar pacientes para marcação de consultas médicas.</p>
-                    <span class="visit-button">Visitar</span>
-                </div>
-            </div>
-            <div class="session-footer-divisor"></div>
-        </div>
-        <div class="frontend-mentor-session container-padding" id="mentor">
-            <div class="session-description-area">
-                <h2 class="session-title"><span class="outstanding-text">Frontend</span> Mentor</h2>
-                <p class="session-description">Aqui você encontrará alguns dos projetos que fiz baseados nos designs disponíveis na página do frontend mentor, com a finalidade de praticar CSS</p>
-            </div>
-            <div class="frontend-mentor-projects">
-                <div class="frontend-project first-project">
-                    <img class="frontend-project__image" src="./public/images/jeremy-project.jpeg" alt="">
-                    <div class="frontend-project__info">
-                        <h4 class="frontend-project__title">Sunnyside</h4>
-                        <a class="visit-button" target="_blank" href="https://carloshf9.github.io/Sunnyside-Agency-Landing-Page-Frontend-Mentor-/">Visitar</a>
-                    </div>
-                </div>
-                <div class="frontend-project first-project">
-                    <img class="frontend-project__image" src="./public/images/wqzotbyfysz9pbfk9jus.jpg" alt="">
-                    <div class="frontend-project__info">
-                        <h4 class="frontend-project__title">Sunnyside</h4>
-                        <a class="visit-button" target="_blank" href="https://carloshf9.github.io/Sunnyside-Agency-Landing-Page-Frontend-Mentor-/">Visitar</a>
-                    </div>
-                </div>
-                <div class="frontend-project first-project">
-                    <img class="frontend-project__image" src="./public/images/tip-calculator.jpg" alt="">
-                    <div class="frontend-project__info">
-                        <h4 class="frontend-project__title">Sunnyside</h4>
-                        <a class="visit-button" target="_blank" href="https://carloshf9.github.io/Sunnyside-Agency-Landing-Page-Frontend-Mentor-/">Visitar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="session-footer-divisor"></div>
-        </div>
-        <div class="technology-session container-padding" id="tecnologias">
-            <div class="session-description-area">
-                <h2 class="session-title"><span class="outstanding-text">Tecnologias</span> Utilizadas</h2>
-                <p class="session-description">Fazer bons projetos de software é importante, mais ainda são ferramentas convenientes que são utilizadas durante o processo de desenvolvimento de aplicações.</p>
-            </div>
-            <div class="technology-list">
-                <div class="technology">
-                    <img src="./public/images/512px-React-icon.svg.png" alt="" class="technology__image">
-                    <h4>React JS</h4>   
-                </div>
-                <div class="technology">
-                    <img src="./public/images/2048px-Angular_full_color_logo.svg.png" alt="" class="technology__image">
-                    <h4>Angular</h4>   
-                </div>
-                <div class="technology">
-                    <img src="./public/images/logo-html-5-2048.png" alt="" class="technology__image">
-                    <h4>HTML + CSS</h4>   
-                </div>
-            </div>
-            <div class="session-footer-divisor"></div>
-        </div>
-        <div class="about-me-session container-padding" id="sobre">
-            <div class="session-description-area">
-                <h2 class="session-title">Sobre <span class="outstanding-text">mim</span></h2>
-            </div>
-            <div class="persona">
-                <img src="./public/images/carlos_frey.jpeg" alt="" class="persona__picture">
-                <p class="persona__description">
-                    Oi! Meu nome é Carlos Frey, tenho 23 anos e sou graduando em Sistemas de informação pela Universidade Federal de Pernambuco. Tenho interesse na área de desenvolvimento web, primariamente direcionado ao Frontend. Tenho experiência com HTML, CSS & Javascript, bem como linguagem SQL. Além disso, gosto também da ferramenta de design Figma para prototipação de páginas web.
-                </p>
-            </div>
-            <div class="session-footer-divisor"></div>
-        </div>
-        <div class="contact-session" id="contato">
-            <div class="contact-information">
-                <h3 class="name">Carlos <span class="outstanding-text">Frey</span></h3>
-                <ul class="footer-navigation-menu horizontal-list">
-                    <li class="footer-item-menu"><a href="">Projetos</a></li>
-                    <li class="footer-item-menu"><a href="">Frontend Mentor</a></li>
-                    <li class="footer-item-menu"><a href="">Sobre</a></li>
-                </ul>
-                <ul class="social-media-menu horizontal-list">
-                    <li><i data-feather="facebook"></i></li>
-                    <li><i data-feather="instagram"></i></li>
-                    <li><i data-feather="linkedin"></i></li>
-                </ul>
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">
+        Portfólio<span class="outstanding-text"> Website</span>
+      </h1>
+      <i data-feather="menu" id="button-menu" class="header__button-menu"></i>
 
-        <script>
-            feather.replace()
-        </script>
-        <script src="./public/js/index.js"></script>
-    </body>
-    
+      <div class="header__menu" id="menu">
+        <a class="item" href="#inicio">Início</a>
+        <a class="item" href="#projetos">Projetos</a>
+        <a class="item" href="#session-frontend-mentor">Frontend Mentor</a>
+        <a class="item" href="#sobre">Sobre</a>
+        <a class="item" class="contact-button" href="#contato">Contato</a>
+      </div>
+      <ul class="header__menu-desktop">
+        <li class="menu-item"><a class="item" href="#inicio">Início</a></li>
+        <li class="menu-item">
+          <a class="item" href="#session-projetos">Projetos</a>
+        </li>
+        <li class="menu-item">
+          <a class="item" href="#mentor">Frontend Mentor</a>
+        </li>
+        <li class="menu-item"><a class="item" href="#sobre">Sobre</a></li>
+        <li class="menu-item"><a class="item" href="#contato">Contato</a></li>
+      </ul>
+    </header>
+    <div class="hero container-padding">
+      <img
+        class="hero__image"
+        src="./public/images/vecteezy_programmer-people-concept-use-laptop-and-programming-code_.jpg"
+        alt=""
+        srcset=""
+      />
+      <div class="hero__info-container">
+        <h2 class="hero__impact-phrase">
+          Meu nome é <span class="outstanding-text">Carlos</span> e este é o meu
+          <span class="outstanding-text">Portifólio</span>
+        </h2>
+        <div class="hero__options">
+          <a href="#session-projetos" class="hero__lets-go-button">Vamos lá!</a>
+          <a href="https://www.google.com" class="hero__leave-button"
+            >Voltar para a web</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="session-footer-divisor" id="session-projetos"></div>
+    <div
+      class="container-sessions container-padding margin-top-for-session"
+      id="projetos"
+    >
+      <div class="session-description-area">
+        <h2 class="session-title">
+          Projetos de <span class="outstanding-text">Software</span>
+        </h2>
+        <p class="session-description">
+          Abaixo você encontrará alguns projetos de software nos quais eu estive
+          envolvido, ou até mesmo projetos que estão em andamento e estou
+          participando
+        </p>
+      </div>
+      <div class="software-project software-project-left-animated">
+        <img
+          src="./public/images/holo (online-video-cutter.com).gif"
+          alt=""
+          class="software-project__image"
+        />
+        <div class="software-project__info">
+          <h3 class="software-project__title">Holo health systems</h3>
+          <p class="software-project__details">
+            Esta é uma aplicação desenvolvida com incentivo da disciplina de
+            engenharia de software. A sua funcionalidade primária é auxiliar
+            pacientes para marcação de consultas médicas.
+          </p>
+          <a href="https://holohsystems.herokuapp.com/" class="visit-button"
+            >Visitar</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="session-footer-divisor" id="session-frontend-mentor"></div>
+    <div
+      class="container-sessions frontend-mentor-session container-padding margin-top-for-session"
+      id="mentor"
+    >
+      <div class="session-description-area">
+        <h2 class="session-title">
+          <span class="outstanding-text">Frontend</span> Mentor
+        </h2>
+        <p class="session-description">
+          Aqui você encontrará alguns dos projetos que fiz baseados nos designs
+          disponíveis na página do frontend mentor, com a finalidade de praticar
+          CSS
+        </p>
+      </div>
+      <div class="frontend-mentor-projects">
+        <div class="frontend-project first-project">
+          <img
+            class="frontend-project__image"
+            src="./public/images/jeremy-project.jpeg"
+            alt=""
+          />
+          <div class="frontend-project__info">
+            <h4 class="frontend-project__title">Time tracking</h4>
+            <a
+              class="visit-button"
+              target="_blank"
+              href="https://carloshf9.github.io/Jeremy-Robson/"
+              >Visitar</a
+            >
+          </div>
+        </div>
+        <div class="frontend-project first-project">
+          <img
+            class="frontend-project__image"
+            src="./public/images/wqzotbyfysz9pbfk9jus.jpg"
+            alt=""
+          />
+          <div class="frontend-project__info">
+            <h4 class="frontend-project__title">Sunnyside</h4>
+            <a
+              class="visit-button"
+              target="_blank"
+              href="https://carloshf9.github.io/Sunnyside-Agency-Landing-Page-Frontend-Mentor-/"
+              >Visitar</a
+            >
+          </div>
+        </div>
+        <div class="frontend-project first-project">
+          <img
+            class="frontend-project__image"
+            src="./public/images/tip-calculator.jpg"
+            alt=""
+          />
+          <div class="frontend-project__info">
+            <h4 class="frontend-project__title">Tip Calculator</h4>
+            <a
+              class="visit-button"
+              target="_blank"
+              href="https://cyan-tip-calculator.herokuapp.com/"
+              >Visitar</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="session-footer-divisor" id="session-projetos"></div>
+    <div
+      class="container-sessions technology-session container-padding margin-top-for-session"
+      id="tecnologias"
+    >
+      <div class="session-description-area">
+        <h2 class="session-title">
+          <span class="outstanding-text">Tecnologias</span> Utilizadas
+        </h2>
+        <p class="session-description">
+          Fazer bons projetos de software é importante, mais ainda são
+          ferramentas convenientes que são utilizadas durante o processo de
+          desenvolvimento de aplicações.
+        </p>
+      </div>
+      <div class="technology-list">
+        <div class="technology">
+          <img
+            src="./public/images/512px-React-icon.svg.png"
+            alt=""
+            class="technology__image"
+          />
+          <h4>React JS</h4>
+        </div>
+        <div class="technology">
+          <img
+            src="./public/images/2048px-Angular_full_color_logo.svg.png"
+            alt=""
+            class="technology__image"
+          />
+          <h4>Angular</h4>
+        </div>
+        <div class="technology">
+          <img
+            src="./public/images/logo-html-5-2048.png"
+            alt=""
+            class="technology__image"
+          />
+          <h4>HTML + CSS</h4>
+        </div>
+      </div>
+      <div class="session-footer-divisor"></div>
+    </div>
+    <div
+      class="container-sessions about-me-session container-padding margin-top-for-session"
+      id="sobre"
+    >
+      <div class="session-description-area">
+        <h2 class="session-title">
+          Sobre <span class="outstanding-text">mim</span>
+        </h2>
+      </div>
+      <div class="persona">
+        <img
+          src="./public/images/carlos_frey.jpeg"
+          alt=""
+          class="persona__picture"
+        />
+        <p class="persona__description">
+          Oi! Meu nome é Carlos Frey, tenho 23 anos e sou graduando em Sistemas
+          de informação pela Universidade Federal de Pernambuco. Tenho interesse
+          na área de desenvolvimento web, primariamente direcionado ao Frontend.
+          Tenho experiência com HTML, CSS & Javascript, bem como linguagem SQL.
+          Além disso, gosto também da ferramenta de design Figma para
+          prototipação de páginas web.
+        </p>
+      </div>
+      <div class="session-footer-divisor"></div>
+    </div>
+    <div
+      class="container-sessionscontact-session margin-top-for-session"
+      id="contato"
+    >
+      <div class="contact-information">
+        <h3 class="name">Carlos <span class="outstanding-text">Frey</span></h3>
+        <ul class="footer-navigation-menu horizontal-list">
+          <li class="footer-item-menu"><a href="">Projetos</a></li>
+          <li class="footer-item-menu"><a href="">Frontend Mentor</a></li>
+          <li class="footer-item-menu"><a href="">Sobre</a></li>
+        </ul>
+        <ul class="social-media-menu horizontal-list">
+          <li>
+            <a
+              class="to-black"
+              href="https://www.facebook.com/profile.php?id=100003134899890"
+            >
+              <i data-feather="facebook"> </i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="to-black"
+              href="https://www.instagram.com/yournewviews/?hl=pt-br"
+            >
+              <i data-feather="instagram"> </i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="to-black"
+              href="https://www.linkedin.com/in/carlos-frey-baa4a821b/"
+            >
+              <i data-feather="linkedin"> </i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="./public/js/index.js"></script>
+  </body>
 </html>
